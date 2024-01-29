@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Animal</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    
+<h1>Calculadora Animal</h1>
+
+<label for="tipoJogo">Escolha o tipo de jogo:</label>
+<select id="tipoJogo">
+    <option value="grupo">Grupo</option>
+    <option value="dezena">Dezena</option>
+    <option value="centena">Centena</option>
+    <option value="milhar">Milhar</option>
+    <option value="milharCentena">Milhar e Centena (MC)</option>
+    <option value="duqueDezena">Duque de Dezena (DG)</option>
+    <option value="duqueGrupo">Duque de Grupo (DG)</option>
+    <option value="ternoDezena">Terno de Dezena (TD)</option>
+    <option value="ternoGrupo">Terno de Grupo (TG)</option>
+</select>
+
+<br>
+
+<label for="valorJogo">Insira o valor do jogo:</label>
+<input type="number" id="valorJogo" min="1" placeholder="Insira um valor">
+
+<br>
+
+<button onclick="calculate()">Calcular</button>
+
+<br>
+
+<p id="retorno">O retorno aparecerá aqui</p>
+
+</body>
+</html>
