@@ -11,6 +11,8 @@
     
 <h1>Calculadora Animal</h1>
 
+<p>Por favor, escolha um tipo de jogo, insira o valor que deseja jogar e clique em "Calcular" para ver o retorno.</p>
+
 <label for="tipoJogo">Escolha o tipo de jogo:</label>
 <select id="tipoJogo">
     <option value="grupo">Grupo</option>
@@ -27,7 +29,7 @@
 <br>
 
 <label for="valorJogo">Insira o valor do jogo:</label>
-<input type="number" id="valorJogo" min="1" placeholder="Insira um valor">
+<input type="text" id="valorJogo" placeholder="R$0,00" onblur="formatCurrency()">
 
 <br>
 
@@ -36,6 +38,8 @@
 <br>
 
 <p id="retorno">O retorno aparecerá aqui</p>
+
+<p id="disclaimer">Esse site não possui nenhum vínculo com o serviço ou pessoas que operem o denominado "Jogo do Bicho".</p>
 
 </body>
 </html>
